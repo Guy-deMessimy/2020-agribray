@@ -21,13 +21,13 @@ export const StyledBurgerMenu = styled.div`
     }
   }
   .bm-burger-bars {
-    background: #ffbe00;
+    background: #F6D743;
     border-radius: 3px;
   }
   .bm-cross-button {
     height: 24px;
     width: 24px;
-    background: #1c819e;
+    background: #06623B;
     border-radius: 3px;
   }
   .bm-cross {
@@ -36,7 +36,7 @@ export const StyledBurgerMenu = styled.div`
   .bm-menu {
     position: relative;
     top: 0;
-    background: #ffbe00;
+    background: #F6D743;
     padding: 2.5em 1em;
     font-size: 1.15em;
     border-radius: 5px 0px 0px 0px;
@@ -56,7 +56,7 @@ export const StyledBurgerMenu = styled.div`
     border-bottom: 1px solid #ffffff66;
     :hover {
       background: #ffffff26;
-      color: #005542;
+      color: #06623B;
     }
   }
   .bm-overlay {

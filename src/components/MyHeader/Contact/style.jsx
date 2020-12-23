@@ -9,11 +9,19 @@ export const ContactButton = styled.button`
     background-color: #F6F578; 
     padding: 10px 3px 10px 3px;
     border-radius: 5px;
+   
+    font-size: 1.2em;
+    border: solid 1px #F6F578;
+    a {
+    font-family: "Roboto", sans-serif;
+    display: inline-block;
     color: #000000;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.2em;
-    font-family: "Roboto", sans-serif;
-    border: solid 1px #F6F578;
+    text-align: center;
+    &:hover {
+      color: #06623B;
+    }
+    }
     
     `;

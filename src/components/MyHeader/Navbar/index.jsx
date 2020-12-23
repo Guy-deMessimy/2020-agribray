@@ -8,33 +8,33 @@ export default function Navbar() {
         <NavDropdown>
           <a href="/">Qui Sommes Nous ?</a>
           <DropdownItems>
-            <a href="/engagements">Agribray</a>
-            <a href="/about">Equipes</a>
+            <a href="/agribray">Agribray</a>
+            <a href="/equipes">Equipes</a>
           </DropdownItems>
         </NavDropdown>
         
         <NavDropdown>
-          <a href="/actions">Services</a>
+          <a href="/services">Services</a>
           <DropdownItems>
-            <a href="/pedagogie">Travaux agricoles</a>
-            <a href="/ateliers">Transports</a>
+            <a href="/travaux">Travaux agricoles</a>
+            <a href="/transports">Transports</a>
           </DropdownItems>
         </NavDropdown>
 
         <NavDropdown>
-          <a href="/actions">Galeries</a>
+          <a href="/galeries">Galeries</a>
           <DropdownItems>
-            <a href="/pedagogie">Photos</a>
-            <a href="/ateliers">Videos</a>
+            <a href="/photos">Photos</a>
+            <a href="/videos">Videos</a>
           </DropdownItems>
         </NavDropdown>
 
       <NavDropdown>
-        <a href="/actualite">Temoignages</a>
+        <a href="/temoignages">Temoignages</a>
       </NavDropdown>
 
       <NavDropdown>
-        <a href="/contact">Infos</a>
+        <a href="/infos">Infos</a>
       </NavDropdown>
 
     </nav>

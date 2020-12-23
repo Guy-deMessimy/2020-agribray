@@ -3,7 +3,7 @@ import { device } from "../../layout/Device";
 
 export const NavContainer = styled.div`
   height: 50px;
-  width: 50%;
+  width: 60%;
   background: #06623B;
   border-radius: 5px;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);

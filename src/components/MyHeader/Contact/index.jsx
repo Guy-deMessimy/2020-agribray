@@ -4,7 +4,9 @@ import { ButtonContainer, ContactButton } from './style'
 const Contact = () => {
     return (
         <ButtonContainer>
-        <ContactButton>Nous contacter </ContactButton>
+        <ContactButton>
+        <a href="/contact">Nous contacter</a>
+        </ContactButton>
         </ButtonContainer>
     )
 }

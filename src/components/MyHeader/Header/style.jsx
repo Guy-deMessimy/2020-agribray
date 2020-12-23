@@ -7,10 +7,11 @@ export const HeaderContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  height: 10vh;
+  height: 15vh;
   width: 100vw;
-  background: #e6e6e6;
-  border: solid 2px red;
+  background: #06623B;
+
+
   @media ${device.small_screen} {
     height: 140px;
   }
@@ -49,9 +50,8 @@ export const HeaderBackground = styled.div`
 export const LogoContainer = styled.div`
   display: flex;
   justify-content: center;
-  width: 15%;
-  height: 15%;
-  border: yellow 3px solid;
+  width: 12%;
+  height: auto;
   @media ${device.small_screen} {
     height: 100px;
   }
@@ -66,8 +66,9 @@ export const LogoContainer = styled.div`
     width: auto;
   }
   img {
-    width: auto;
-    max-height: 120px;
+    width: 55%;
+    height: auto;
+    border-radius: 50%;
     margin: auto;
     @media ${device.desktop} {
       max-width: 14vw;

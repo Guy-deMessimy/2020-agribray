@@ -6,15 +6,17 @@ export default function Burger() {
   return (
     <StyledBurgerMenu>
       <Menu right width={"180px"}>
-        <a href="/">Nous</a>
+        <a href="/">Agribray</a>
 
-        <a href="/actions">Actions</a>
+        <a href="/equipes">Equipes</a>
 
-        <a href="/soutien">Soutien</a>
+        <a href="/services">Services</a>
 
-        <a href="/actualite">Actualité</a>
+        <a href="/galerie">Galerie</a>
 
-        <a href="/contact">Contact</a>
+        <a href="/temoignage">Temoignages</a>
+
+        <a href="/infos">infos</a>
       </Menu>
     </StyledBurgerMenu>
   );
