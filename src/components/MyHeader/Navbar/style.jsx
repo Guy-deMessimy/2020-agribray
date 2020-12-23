@@ -6,9 +6,9 @@ export const NavContainer = styled.div`
   bottom: 0;
   z-index: 2;
   height: 50px;
-  width: 70%;
+  width: 50%;
   margin: 0 15% 0 15%;
-  background: #ffbe00;
+  background: #06623B;
   border-radius: 5px;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
   color: rgba(255, 255, 255, 0.4);
@@ -42,7 +42,7 @@ export const NavContainer = styled.div`
     text-transform: uppercase;
     text-align: center;
     &:hover {
-      color: #005542;
+      color: #F6D743;
     }
   }
 `;
@@ -51,7 +51,7 @@ export const DropdownItems = styled.div`
   display: none;
   position: absolute;
   padding-top: 18px;
-  background-color: #ffbe00;
+  background-color: #06623B;
   min-width: 160px;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
   z-index: 2;
@@ -79,8 +79,8 @@ export const NavDropdown = styled.div`
   display: inline-block;
   &:hover ${DropdownItems} {
     display: block;
-    background-color: #ffbe00;
+    background-color: #06623B;
     border-radius: 0px 0px 5px 5px;
-    color: #005542;
+    color: #F6D743;
   }
 `;

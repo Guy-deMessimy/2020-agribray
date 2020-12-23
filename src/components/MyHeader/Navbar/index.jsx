@@ -12,7 +12,7 @@ export default function Navbar() {
             <a href="/about">Equipes</a>
           </DropdownItems>
         </NavDropdown>
-        |
+        
         <NavDropdown>
           <a href="/actions">Services</a>
           <DropdownItems>
@@ -30,8 +30,11 @@ export default function Navbar() {
         </NavDropdown>
 
       <NavDropdown>
-        <a href="/actualite">Temoignages</a>|
-        <a href="/contact">Contact</a>
+        <a href="/actualite">Temoignages</a>
+      </NavDropdown>
+
+      <NavDropdown>
+        <a href="/contact">Infos</a>
       </NavDropdown>
 
     </nav>

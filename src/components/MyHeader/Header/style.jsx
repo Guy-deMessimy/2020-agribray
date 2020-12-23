@@ -4,7 +4,7 @@ import { device } from "../../layout/Device";
 export const HeaderContainer = styled.div`
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-content: flex-start;
   justify-content: center;
   height: 200px;

@@ -1,12 +1,11 @@
 import React from "react";
 import {
   HeaderContainer,
-  TopBorder,
   HeaderBackground,
   LogoContainer,
-  ContactContainer,
 } from "./style";
 import Navbar from "../Navbar";
+import Contact from "../Contact"
 import Burger from "../Burger/index";
 
 const Header = () => {
@@ -20,6 +19,7 @@ const Header = () => {
           </LogoContainer>
         </HeaderBackground>
         <Navbar />
+        <Contact/>
       </HeaderContainer>
     </>
   );
