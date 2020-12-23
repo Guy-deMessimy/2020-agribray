@@ -22,9 +22,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-#use reset CSS
+# use reset CSS
 npm i styled-reset
 
 # Use React burger menu
 npm install react-burger-menu
 
+# Use CSS styled components
+npm install --save styled-components.
