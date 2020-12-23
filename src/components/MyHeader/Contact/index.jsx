@@ -1,10 +1,11 @@
 import React from 'react';
+import { ButtonContainer, ContactButton } from './style'
 
 const Contact = () => {
     return (
-        <div>
-        <p>coucou</p>
-        </div>
+        <ButtonContainer>
+        <ContactButton>Nous contacter </ContactButton>
+        </ButtonContainer>
     )
 }
 

@@ -2,12 +2,8 @@ import styled from "styled-components";
 import { device } from "../../layout/Device";
 
 export const NavContainer = styled.div`
-  position: absolute;
-  bottom: 0;
-  z-index: 2;
   height: 50px;
   width: 50%;
-  margin: 0 15% 0 15%;
   background: #06623B;
   border-radius: 5px;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
@@ -56,10 +52,7 @@ export const DropdownItems = styled.div`
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
   z-index: 2;
   a {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding: 20px 10px 20px 10px;
     display: block;
     text-align: left;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);

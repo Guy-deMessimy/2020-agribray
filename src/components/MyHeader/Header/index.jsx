@@ -1,7 +1,6 @@
 import React from "react";
 import {
   HeaderContainer,
-  HeaderBackground,
   LogoContainer,
 } from "./style";
 import Navbar from "../Navbar";
@@ -13,11 +12,9 @@ const Header = () => {
     <>
       <Burger />
       <HeaderContainer>
-        <HeaderBackground>
           <LogoContainer>
             <img src="/images/logo_Header.png" alt="ToiDemain logo" />
           </LogoContainer>
-        </HeaderBackground>
         <Navbar />
         <Contact/>
       </HeaderContainer>

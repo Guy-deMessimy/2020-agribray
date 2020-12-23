@@ -5,10 +5,10 @@ export const HeaderContainer = styled.div`
   position: relative;
   display: flex;
   flex-direction: row;
-  align-content: flex-start;
-  justify-content: center;
-  height: 200px;
-  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  height: 10vh;
+  width: 100vw;
   background: #e6e6e6;
   border: solid 2px red;
   @media ${device.small_screen} {
@@ -49,8 +49,8 @@ export const HeaderBackground = styled.div`
 export const LogoContainer = styled.div`
   display: flex;
   justify-content: center;
-  height: 145px;
   width: 15%;
+  height: 15%;
   border: yellow 3px solid;
   @media ${device.small_screen} {
     height: 100px;
