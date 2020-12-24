@@ -21,12 +21,12 @@ export const NavContainer = styled.div`
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    font-size: 1em;
+    font-size: 1.4em;
     @media ${device.small_screen} {
-      font-size: 1.4vw;
+     
     }
     @media ${device.desktop} {
-      font-size: max(1.1vw);
+   
     }
   }
   a {
