@@ -2,12 +2,12 @@ import styled from "styled-components";
 import { device } from "../../layout/Device";
 
 export const NavContainer = styled.div`
-  height: 50px;
-  width: 60%;
+  width: 65%;
+  height: 70%;
   background: #06623B;
   border-radius: 5px;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
-  color: rgba(255, 255, 255, 0.4);
+  border: solid red 2px;
   @media ${device.mobile} {
     display: none;
   }
@@ -21,7 +21,6 @@ export const NavContainer = styled.div`
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    overflow: hidden;
     font-size: 1em;
     @media ${device.small_screen} {
       font-size: 1.4vw;
@@ -32,11 +31,9 @@ export const NavContainer = styled.div`
   }
   a {
     font-family: "Roboto", sans-serif;
-    display: inline-block;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    text-align: center;
     &:hover {
       color: #F6D743;
     }
@@ -48,13 +45,13 @@ export const DropdownItems = styled.div`
   position: absolute;
   padding-top: 18px;
   background-color: #06623B;
-  min-width: 160px;
+  min-width: 220px;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
   z-index: 2;
   a {
-    padding: 20px 10px 20px 10px;
     display: block;
     text-align: left;
+    padding: 20px 10px 20px 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     &:first-child {
       border-top: 1px solid rgba(255, 255, 255, 0.4);
@@ -69,10 +66,8 @@ export const DropdownItems = styled.div`
 `;
 
 export const NavDropdown = styled.div`
-  display: inline-block;
   &:hover ${DropdownItems} {
     display: block;
-    background-color: #06623B;
     border-radius: 0px 0px 5px 5px;
     color: #F6D743;
   }
