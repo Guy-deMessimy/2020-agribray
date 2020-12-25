@@ -2,41 +2,34 @@ import styled from "styled-components";
 import { device } from "../../layout/Device";
 
 export const HeaderContainer = styled.div`
-  height: 10vh;
-  width: 100vw;
+  max-width: 100vw;
+  height: auto;
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   background: #fff;
-  border: solid 1px green;
+  border: solid 1px #06623B;
 `;
 
 export const LogoContainer = styled.div`
-  width: 15%;
-  height: 90%;  
+  max-width: 10%;
+  height: auto;
   display: flex;
-  border: solid 1px green;
+  justify-content: center;
+  align-items: center;
+  @media ${device.tablet} {
+    max-width: 15%;
+    height: auto;
+  }
+  @media ${device.mobile} {
+    max-width: 25%;
+    height: auto;
+    }
   img {
-    width: 35%;
-    height: 90%;
+    max-width: 80%;
+	  height: auto;
     border-radius: 50%;
-    margin: auto;
-    @media ${device.desktop} {
-      max-width: 14vw;
-    }
-    @media ${device.small_screen} {
-      max-height: 140px;
-      width: 80%;
-    }
-    @media ${device.tablet} {
-      height: 90px;
-      width: auto;
-    }
-    @media ${device.mobile} {
-      height: 50px;
-      width: auto;
-    }
   }
 `;

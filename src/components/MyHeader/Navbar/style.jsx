@@ -3,15 +3,17 @@ import { device } from "../../layout/Device";
 
 export const NavContainer = styled.div`
   width: 65%;
-  height: 70%;
+  height: auto;
   background: #06623B;
   border-radius: 5px;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
-  border: solid red 2px;
-  @media ${device.mobile} {
+  @media ${device.small_screen} {
+  width: 60%;   
+    }
+  @media ${device.tablet} {
     display: none;
   }
-  @media ${device.tablet} {
+  @media ${device.mobile} {
     display: none;
   }
   nav {
@@ -21,12 +23,9 @@ export const NavContainer = styled.div`
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    font-size: 1.4em;
+    font-size: 1em;
     @media ${device.small_screen} {
-     
-    }
-    @media ${device.desktop} {
-   
+      font-size: 0.8em;
     }
   }
   a {

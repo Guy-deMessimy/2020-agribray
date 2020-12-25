@@ -9,36 +9,35 @@ export const StyledBurgerMenu = styled.div`
     display: none;
   }
   .bm-burger-button {
-    position: absolute;
-    width: 36px;
+    position: fixed;
+    width: 40px;
     height: 30px;
-    right: 36px;
+    left: 15px;
+    top: 20px;
     @media ${device.tablet} {
-      top: 60px;
     }
     @media ${device.mobile} {
-      top: 33px;
+    
     }
   }
   .bm-burger-bars {
-    background: #F6D743;
+    background: #06623B;
     border-radius: 3px;
   }
   .bm-cross-button {
     height: 24px;
     width: 24px;
-    background: #06623B;
+    background: #F6D743;
     border-radius: 3px;
   }
   .bm-cross {
-    background: #fff;
+    background: #000;
   }
   .bm-menu {
     position: relative;
     top: 0;
-    background: #F6D743;
+    background: #06623B;
     padding: 2.5em 1em;
-    font-size: 1.15em;
     border-radius: 5px 0px 0px 0px;
   }
   .bm-item-list {
@@ -46,17 +45,18 @@ export const StyledBurgerMenu = styled.div`
   }
   .bm-item {
     display: inline-block;
+    text-decoration: none;
+    transition: color 0.2s;
     color: #fff;
     font-family: "Roboto", sans-serif;
     font-size: 1.2em;
     text-transform: uppercase;
     text-align: left;
-    text-decoration: none;
     padding: 10px;
     border-bottom: 1px solid #ffffff66;
     :hover {
       background: #ffffff26;
-      color: #06623B;
+      color: #F6D743;
     }
   }
   .bm-overlay {

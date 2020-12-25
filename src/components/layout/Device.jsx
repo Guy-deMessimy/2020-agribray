@@ -4,7 +4,7 @@ const size = {
     maxTeblet: "768px",
     MinSmallScreen: "769px",
     MaxSmallScreen: "1024px",
-    desktop: "1200px",
+    desktop: "1025px",
   };
   
   export const device = {

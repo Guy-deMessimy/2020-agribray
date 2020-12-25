@@ -5,7 +5,7 @@ import { StyledBurgerMenu } from "./style";
 export default function Burger() {
   return (
     <StyledBurgerMenu>
-      <Menu right width={"180px"}>
+      <Menu left width={"180px"}>
         <a href="/">Agribray</a>
 
         <a href="/equipes">Equipes</a>

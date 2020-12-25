@@ -10,11 +10,12 @@ import Burger from "../Burger/index";
 const Header = () => {
   return (
     <>
-      <Burger />
+         <Burger />
       <HeaderContainer>
           <LogoContainer>
             <img src="/images/logo.png" alt="Agribray logo" />
           </LogoContainer>
+       
         <Navbar />
         <Contact/>
       </HeaderContainer>
