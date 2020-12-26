@@ -7,6 +7,7 @@ export const ButtonContainer = styled.div `
 export const ContactButton = styled.button`
     background-color: #F6F578; 
     padding: 10px 10px 10px 10px;
+    margin-left: 20px;
     border-radius: 5px;
     border: solid 1px #F6F578;
     a {

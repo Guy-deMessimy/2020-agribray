@@ -16,18 +16,18 @@ const headersData = [
       href: "/galerie",
     },
     {
-        label: "Videos",
-        href: "/videos",
+      label: "Videos",
+      href: "/videos",
       },
     
     {
-        label: "Temoignages",
-        href: "/temoignages",
+      label: "Temoignages",
+      href: "/temoignages",
     },
     {
-        label: "infos",
-        href: "/infos",
-      },
+      label: "infos",
+      href: "/infos",
+    },
   ];
 
   export default headersData

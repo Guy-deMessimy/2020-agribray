@@ -11,9 +11,9 @@ export const StyledBurgerMenu = styled.div`
   .bm-burger-button {
     position: fixed;
     width: 40px;
-    height: 30px;
+    height: 20px;
     left: 15px;
-    top: 20px;
+    top: 10px;
     @media ${device.tablet} {
     }
     @media ${device.mobile} {
