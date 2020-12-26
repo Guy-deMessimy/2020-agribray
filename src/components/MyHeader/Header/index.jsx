@@ -13,7 +13,7 @@ const Header = () => {
          <Burger />
       <HeaderContainer>
           <LogoContainer>
-            <img src="/images/logo.png" alt="Agribray logo" />
+            <img src="/images/Logo-Agribray.png" alt="Agribray logo" />
           </LogoContainer>
        
         <Navbar />

@@ -14,7 +14,7 @@ export const HeaderContainer = styled.div`
 `;
 
 export const LogoContainer = styled.div`
-  max-width: 10%;
+  max-width: 20%;
   height: auto;
   display: flex;
   justify-content: center;
