@@ -13,7 +13,7 @@ export const StyledBurgerMenu = styled.div`
     width: 40px;
     height: 20px;
     left: 15px;
-    top: 10px;
+    top: 15px;
     @media ${device.tablet} {
     }
     @media ${device.mobile} {

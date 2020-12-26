@@ -17,17 +17,18 @@ export const ContactButton = styled.button`
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
+    font-weight: 900;
     &:hover {
       color: #06623B;
     }
     @media ${device.small_screen} {
-        font-size: 0.8em;
+      
     }
     @media ${device.tablet} {
-        font-size: 0.8em;
+    
     }
     @media ${device.mobile} {
-        font-size: 0.8em;
+        
     }
     }
     `;

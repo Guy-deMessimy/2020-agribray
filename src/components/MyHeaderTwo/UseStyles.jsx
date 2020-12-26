@@ -14,17 +14,22 @@ import { makeStyles } from "@material-ui/core";
       fontWeight: 900,
       size: "18px",
       fontSize: "1em",
-      marginLeft: "38px",
+      marginLeft: "25px",
+      marginRight: "25px",
       "@media (max-width: 900px)": {
-        fontSize: "0.8em",
+        fontSize: "0.6em",
       },   
     },
     toolbar: {
       display: "flex",
       justifyContent: "space-between",
+     
     },
     drawerContainer: {
       padding: "20px 30px",
+    },
+    logo: {
+      marginLeft: "5px",
     },
   }));
 

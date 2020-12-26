@@ -10,15 +10,14 @@ import {
   import MenuIcon from "@material-ui/icons/Menu";
   import React, { useState, useEffect } from "react";
   import { Link as RouterLink } from "react-router-dom";
-  import agribrayLogo from "./Agribray";
   import headersData from "./HeadersData";
   import useStyles from "./UseStyles";
-  import Contact from "../components/MyHeader/Contact"
+  import Contact from "../MyHeader/Contact"
 
   export default function Header() {
-
+    
     //step 2
-    const { header, menuButton, toolbar, drawerContainer } = useStyles();
+    const { header, logo, menuButton, toolbar, drawerContainer } = useStyles();
   
     //step 4
     const [state, setState] = useState({
@@ -52,7 +51,11 @@ import {
         </Toolbar>
       );
     };
-  
+
+    const agribrayLogo = (
+      <img src="/images/Logo-AgribrayB.png" alt="Agribray logo" width={"150px"} className={logo}/>
+    );
+
     //step 7
     const displayMobile = () => {
       const handleDrawerOpen = () =>

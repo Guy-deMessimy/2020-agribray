@@ -14,17 +14,17 @@ export const HeaderContainer = styled.div`
 `;
 
 export const LogoContainer = styled.div`
-  max-width: 20%;
+  max-width: 30%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   @media ${device.tablet} {
-    max-width: 15%;
+    max-width: 45%;
     height: auto;
   }
   @media ${device.mobile} {
-    max-width: 25%;
+    max-width: 85%;
     height: auto;
     }
   img {
