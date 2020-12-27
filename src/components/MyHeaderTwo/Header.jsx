@@ -53,7 +53,7 @@ import {
     };
 
     const agribrayLogo = (
-      <img src="/images/Logo-AgribrayB.png" alt="Agribray logo" width={"150px"} className={logo}/>
+      <img src="/images/Logo-AgribrayC.png" alt="Agribray logo" width={"150px"} className={logo}/>
     );
 
     //step 7

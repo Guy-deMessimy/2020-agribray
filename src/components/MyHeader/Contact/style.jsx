@@ -21,14 +21,14 @@ export const ContactButton = styled.button`
     &:hover {
       color: #06623B;
     }
-    @media ${device.small_screen} {
-      
+    @media ${device.small_screen} {  
     }
     @media ${device.tablet} {
-    
+      font-size: 1em;
     }
     @media ${device.mobile} {
-        
+      font-size: 0.7em;
+      padding: 5px 3px 5px 3px;
     }
     }
     `;

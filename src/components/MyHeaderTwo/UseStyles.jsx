@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/core";
 
-  const useStyles = makeStyles(() => ({
+  const useStyles = makeStyles(() => ({   
     header: {
       backgroundColor: "#06623B",
       paddingRight: "79px",
@@ -19,11 +19,13 @@ import { makeStyles } from "@material-ui/core";
       "@media (max-width: 900px)": {
         fontSize: "0.6em",
       },   
-    },
+      '&:hover': {
+        background: '#F6D743',
+      },
+      },
     toolbar: {
       display: "flex",
       justifyContent: "space-between",
-     
     },
     drawerContainer: {
       padding: "20px 30px",

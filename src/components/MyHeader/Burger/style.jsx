@@ -15,13 +15,13 @@ export const StyledBurgerMenu = styled.div`
     left: 15px;
     top: 15px;
     @media ${device.tablet} {
+      top: 15px;
     }
     @media ${device.mobile} {
-    
     }
   }
   .bm-burger-bars {
-    background: #06623B;
+    background: #fff;
     border-radius: 3px;
   }
   .bm-cross-button {

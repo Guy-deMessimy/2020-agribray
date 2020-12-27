@@ -9,23 +9,24 @@ export const HeaderContainer = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background: #fff;
-  border: solid 1px #06623B;
+  background: #06623B;
 `;
 
-export const LogoContainer = styled.div`
-  max-width: 30%;
+export const LogoContainer = styled.img`
+  max-width: 15%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   @media ${device.tablet} {
-    max-width: 45%;
+    max-width: 25%;
     height: auto;
+    margin-left: 28vw;
   }
   @media ${device.mobile} {
-    max-width: 85%;
+    max-width: 35%;
     height: auto;
+    margin-left: 20vw;
     }
   img {
     max-width: 80%;
