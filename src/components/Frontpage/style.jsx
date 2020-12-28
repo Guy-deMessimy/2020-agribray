@@ -20,6 +20,16 @@ export const Fond = styled.div`
             left: 50%;
             margin-left: -1000px; 
             }
+        @media ${device.small_screen} {
+            
+        }
+        @media ${device.tablet} {
+
+
+        }
+        @media ${device.mobile} {
+
+        }
     `;
 
 export const TitleContainer = styled.div`
@@ -31,6 +41,50 @@ export const TitleContainer = styled.div`
     top: 400px;
     width: 100%;
     z-index:2;
-    font-size: 3em;
+    @media ${device.mobile} {
+        top: 285px;
+    }
+    @media ${device.tablet} {
+        top: 285px;
+    }
+`;
+
+export const Logo = styled.img`
+    min-height: 100%;
+    min-width: 245px;
+    width: 12%;
+    height: auto;
+    @media ${device.mobile} {
+       
+    }
+
+`;
+
+export const Title = styled.div`
+font-family: "Roboto", sans-serif;
+font-size: 3em;
+letter-spacing: .2rem;
+margin-bottom: 1vh;
+@media ${device.mobile} {
+    font-size: 1em;
+    }
+    @media ${device.tablet} {
+        font-size: 2em;
+
+}
+
+`;
+
+export const SubTitle = styled.div`
+font-family: "Roboto", sans-serif;
+font-size: 1em;
+letter-spacing: .2rem;
+font-weight: 200;
+@media ${device.mobile} {
+    font-size: 0.8em;
+    }
+    @media ${device.tablet} {
+    font-size: 1em;
+    }
 `;
 

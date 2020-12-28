@@ -1,13 +1,16 @@
-import { Fond, TitleContainer } from "./style";
+import { Fond, TitleContainer, Logo, Title, SubTitle } from "./style";
+import ButtonServices from "../Button"
 
 const Frontpage = () => {
     return (
         <Fond>
             <TitleContainer>
-                <h1>AGRIBRAY</h1>
-                <h2>Au service de la nature</h2>
-                <h3>prestataire agricole depuis 34 ans</h3>
+                <Logo src="/photos/agribray-logo.png" alt=""></Logo>
+                <Title>Au service de la nature</Title>
+                <SubTitle>prestataire agricole depuis 34 ans</SubTitle>
+                <ButtonServices/>
             </TitleContainer>
+            
         </Fond> 
     )
 }
