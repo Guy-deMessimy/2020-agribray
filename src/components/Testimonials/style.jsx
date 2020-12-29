@@ -37,7 +37,7 @@ export const TitleContainer = styled.div`
     flex-direction: column;
     align-items: center;
     color: #fff;
-    top: 300px;
+    top: 100px;
     width: 100%;
     z-index:2;
     @media ${device.mobile} {
@@ -65,7 +65,7 @@ margin-bottom: 1vh;
 export const Trait = styled.div`
     background-color: #fff;
     height: 2px;
-    width:20%;
+    width:10%;
     margin-top: 0.8vh;
     margin-bottom: 0.8vh;
     @media ${device.mobile} {

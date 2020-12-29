@@ -1,19 +1,19 @@
 const quotes = {
     0: {
-        student: "Thomas, élève de 3ème au collège Lavoisier",
-        quote: "Ce stage a été très enrichissant, j'ai appris beaucoup ma curiosité est satisfaite"
+        student: "Jean, céréalier à Beauvais, aout 2017",
+        quote: "J'ai fait appel à Agribray et j'ai été très satisafit du service apporté"
     },
     1: {
-        student: "Amélie, élève de l'institution Sainte-Odile en 2nde",
-        quote: "Ce stage nous a beaucoup appris tout en étant très ludique !"
+        student: "Abdoulah, maire du moulin de la vierge, mai 2018",
+        quote: "Qualité de la prestation, rapidité, sens du service, je ne peux que recommandé"
     },
     2: {
-        student: "Amjad, en 3ème au collège Anne Franck ",
-        quote: "Le stage avait le mérite d’avoir une très bonne ambiance et d’etre préparé et travaillé, ce qui m’a beaucoup plu"
+        student: "Jérôme producteur de betterave à Poix-de-Picardie, novembre 2020",
+        quote: "Malgré des conditions météorologiques difficiles l'équipement d'Agribray à fait la différence"
     },
     3: {
-        student: "Gaetan, collège Carnot international en 2nde ",
-        quote: "Le stage était captivant, motivant, bonne ambiance, agréable, créatif, apprenant, enrichissant. "
+        student: "Jean-Michel, céréalier à Vocourt, septembre 2019 ",
+        quote: "Leur équipe est au top et très professionnelle, la moisson s'est très bien déroulée. "
     }
 }
 

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../layout/Device";
 
 export const QuoteContainer = styled.div`
     display: flex;
