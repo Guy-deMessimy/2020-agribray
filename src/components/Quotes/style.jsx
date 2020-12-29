@@ -8,7 +8,6 @@ export const QuoteContainer = styled.div`
     width: 100%;
     margin: 40px auto;
     padding: 10px 15px 10px 15px;
-    border: solid 1px blue;  
     @media ${device.mobile} {
             margin: 20px auto;          
     }
