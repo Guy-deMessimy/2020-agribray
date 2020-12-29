@@ -1,14 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import { Reset } from "styled-reset";
+import Testimonials from "./components/Testimonials"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Hello World
-        </p>
-      </header>
+    <div>
+      <Reset />
+      <Testimonials />
     </div>
   );
 }
