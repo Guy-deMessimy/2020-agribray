@@ -42,7 +42,7 @@ export const TitleContainer = styled.div`
     @media ${device.mobile} {
         top: 285px;
     }
-    @media ${device.tabletnpm} {
+    @media ${device.tablet} {
         top: 285px;
     }
 `;
