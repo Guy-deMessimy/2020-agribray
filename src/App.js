@@ -1,14 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import { Reset } from "styled-reset";
+import Agribray from "./components/Entreprise"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Hello World
-        </p>
-      </header>
+    <div>
+      <Reset />
+      <Agribray />
+
     </div>
   );
 }
