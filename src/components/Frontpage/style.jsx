@@ -25,10 +25,8 @@ export const Fond = styled.div`
         }
         @media ${device.tablet} {
 
-
         }
         @media ${device.mobile} {
-
         }
     `;
 
@@ -44,7 +42,7 @@ export const TitleContainer = styled.div`
     @media ${device.mobile} {
         top: 285px;
     }
-    @media ${device.tablet} {
+    @media ${device.tabletnpm} {
         top: 285px;
     }
 `;
@@ -54,8 +52,7 @@ export const Logo = styled.img`
     min-width: 245px;
     width: 12%;
     height: auto;
-    @media ${device.mobile} {
-       
+    @media ${device.mobile} { 
     }
 
 `;

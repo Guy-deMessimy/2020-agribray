@@ -8,12 +8,12 @@ export const Button = styled.button`
     background-color: #06623B; 
     padding: 10px 10px 10px 10px;
     margin-left: 20px;
-    margin-top: 2vh;
+    margin-top: 7vh;
     border-radius: 5px;
     border: solid 1px #06623B;
     a {
     font-family: "Roboto", sans-serif;
-    color: #000000;
+    color: #fff;
     font-size: 2em;
     text-decoration: none;
     text-transform: uppercase;
