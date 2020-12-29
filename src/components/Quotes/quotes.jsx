@@ -1,11 +1,11 @@
 const quotes = {
     0: {
         student: "Jean, céréalier à Beauvais, aout 2017",
-        quote: "J'ai fait appel à Agribray et j'ai été très satisafit du service apporté"
+        quote: "J'ai fait appel à Agribray et j'ai été très satisafait du service apporté"
     },
     1: {
         student: "Abdoulah, maire du moulin de la vierge, mai 2018",
-        quote: "Qualité de la prestation, rapidité, sens du service, je ne peux que recommandé"
+        quote: "Qualité de la prestation, rapidité, sens du service, je ne peux que recommander"
     },
     2: {
         student: "Jérôme producteur de betterave à Poix-de-Picardie, novembre 2020",

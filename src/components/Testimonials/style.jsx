@@ -41,10 +41,13 @@ export const TitleContainer = styled.div`
     width: 100%;
     z-index:2;
     @media ${device.mobile} {
-        top: 285px;
+        top: 125px;
     }
     @media ${device.tablet} {
         top: 285px;
+    }
+    @media ${device.small_screen} {
+        top: 350px;
     }
 `;
 
@@ -69,7 +72,12 @@ export const Trait = styled.div`
     margin-top: 0.8vh;
     margin-bottom: 0.8vh;
     @media ${device.mobile} {
-        width: 50%;
+        width: 5%;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        }
+    @media ${device.tablet} {
+        width: 8%;
         margin-top: 1vh;
         margin-bottom: 1vh;
         }
