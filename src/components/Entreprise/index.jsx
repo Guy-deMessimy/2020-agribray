@@ -2,6 +2,8 @@ import {
   Container,
   Colonne1,
   AgriTitle,
+  Trait,
+  Span,
   Paragraph1,
   Colonne2,
   TravauxAgricoles,
@@ -18,7 +20,8 @@ const Agribray = () => {
   return (
     <Container>
       <Colonne1>
-        <AgriTitle>Bienvenue chez Agribray</AgriTitle>
+        <AgriTitle>Bienvenue chez <Span>Agribray</Span></AgriTitle>
+        <Trait></Trait>
         <Paragraph1>
           La qualité des travaux est primordial pour vos cultures. C'est
           pourquoi depuis plus de 34 ans nous mettons nos machines,
@@ -31,7 +34,7 @@ const Agribray = () => {
       </Colonne1>
       <Colonne2>
         <TravauxAgricoles>
-          <Image1 src="./photos/Tracteur.jpg" width="150px" alt="tracteur" />
+          <Image1 src="./photos/Tracteur.jpg" alt="tracteur" />
           <TravauxTitle>Travaux agricoles</TravauxTitle>
           <Paragraph2>
             Travaux du sol, semences, semis, épandage, application de produit
