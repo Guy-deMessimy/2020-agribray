@@ -21,11 +21,28 @@ export const Fond = styled.div`
     margin-left: -1000px;
   }
   @media ${device.small_screen} {
+    min-width: 2000px;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    left: 10%;
+    margin-left: -610px;
   }
   @media ${device.tablet} {
+    min-width: 1000px;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    left: 50%;
+    margin-left: -510px;
   }
   @media ${device.mobile} {
-    background: linear-gradient(#92e64e, #fff);
+    min-width: 1000px;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    left: 50%;
+    margin-left: -490px;
   }
 `;
 
@@ -39,30 +56,41 @@ export const TitleContainer = styled.div`
   width: 100%;
   z-index: 2;
   @media ${device.mobile} {
-    top: 285px;
+    top: 100px;
   }
   @media ${device.tablet} {
-    top: 285px;
+    top: 100px;
+  }
+  @media ${device.small_screen} {
+    top: 100px;
+  }
+  @media ${device.desktop} {
+    top: 150px;
   }
 `;
 
 export const Logo = styled.img`
   min-height: 100%;
   min-width: 245px;
-  width: 12%;
+  width: 20%;
   height: auto;
-
   @media ${device.mobile} {
+    min-height: 100%;
+    min-width: 145px;
+    width: 20%;
+    height: auto;
   }
 `;
 
 export const Title = styled.div`
   font-family: "Roboto", sans-serif;
   font-size: 3em;
+  text-align: center;
   letter-spacing: 0.2rem;
-  margin-bottom: 1vh;
+  margin-bottom: 1.5vh;
   @media ${device.mobile} {
-    font-size: 1em;
+    letter-spacing: 0.1rem;
+    font-size: 0.8em;
   }
   @media ${device.tablet} {
     font-size: 2em;
@@ -72,10 +100,12 @@ export const Title = styled.div`
 export const SubTitle = styled.div`
   font-family: "Roboto", sans-serif;
   font-size: 1em;
+  text-align: center;
   letter-spacing: 0.2rem;
   font-weight: 200;
   @media ${device.mobile} {
-    font-size: 0.8em;
+    font-size: 0.6em;
+    letter-spacing: 0.1rem;
   }
   @media ${device.tablet} {
     font-size: 1em;

@@ -10,7 +10,6 @@ const Frontpage = () => {
                 <SubTitle>prestataire agricole depuis 34 ans</SubTitle>
                 <ButtonServices/>
             </TitleContainer>
-            
         </Fond> 
     )
 }
