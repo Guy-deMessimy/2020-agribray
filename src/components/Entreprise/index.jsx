@@ -20,15 +20,18 @@ const Agribray = () => {
   return (
     <Container>
       <Colonne1>
-        <AgriTitle>Bienvenue chez <Span>Agribray</Span></AgriTitle>
+        <AgriTitle>
+          Bienvenue chez <Span>Agribray</Span>
+        </AgriTitle>
         <Trait></Trait>
         <Paragraph1>
           La qualité des travaux est primordial pour vos cultures. C'est
           pourquoi depuis plus de 34 ans nous mettons nos machines,
-          savoirs-faire et expertise à votre service. Nos prestations sont
-          adaptées à vos problématiques saisonnières : semis, épandage, lutte
-          contre le gel, maladies, moissons ... rapidité d'interventio,
-          conseils, parc matériel, personnel qualifié, experience ...
+          savoirs-faire et expertises à votre service. <br />
+          Nos prestations sont adaptées à vos problématiques saisonnières :
+          semis, épandage, lutte contre le gel, maladies, moissons ... <br />
+          Nos services : rapidité d'intervention, conseils, parc matériel,
+          personnel qualifié, experience ...
         </Paragraph1>
         <button>Test</button>
       </Colonne1>
