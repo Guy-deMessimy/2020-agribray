@@ -1,32 +1,35 @@
 # 2020-agribray
 
-An application used to present agricultural services that are offered by Agribray, built with React, JavaScript, and CSS style Component.
+An application used to present agricultural services that are offered by Agribray SARL.
 
-Project Status
+Created at the Wild Code School from the Lille Campus (France) by : Guy De Messimy - https://github.com/Guy-deMessimy
+Project Status : Front dev and SQL 
+URL: agribray.fr / agri-bray.fr (nom de domaine réservés)
 
-This project is just entered in development. 
+# This project was bootstrapped with Create React App.
 
-# Getting Started with Create React App
+This is the front-end content of the website. You will find the back-end content on this repo : https://github.com/Guy-deMessimy/2020-agribray-backend.git
+HOST : OVH
+TECHNOLOGIES :
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+    react: 17.0.1
+    react-burger-menu
+    react-redux: 7.2.2
+    redux: 4.0.5
+    redux-thunk: 2.3.0
+    react-burger-menu: 3.0.2
+    react-router-dom: 5.2.0
+    react-router-hash-link: 2.3.1
+    styled-components": 5.2.1
+    styled-reset: 4.3.3
+    react-admin
 
-## Available Scripts
+SETUP :
 
-In the project directory, you can run:
+To run this project, install it locally using npm:
 
-### `npm start`
+    $ git clone https://github.com/Guy-deMessimy/2020-agribray.git
+    $ cd 2020-agribray
+    $ npm install
+    $ npm start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-# use reset CSS
-npm i styled-reset
-
-# Use React burger menu
-npm install react-burger-menu
-
-# Use CSS styled components
-npm install --save styled-components.
