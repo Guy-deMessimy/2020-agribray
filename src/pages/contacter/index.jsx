@@ -1,5 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
+import { init } from "emailjs-com";
+import * as emailjs from "emailjs-com";
+init("user_Thhn4IaRT3llceNo0OZ6m");
 /*const { backendApi } = require("../../conf")*/
 
 function Form() {
@@ -20,6 +23,8 @@ function Form() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
+  const { nom, mail, prestation } = form;
+
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
@@ -31,6 +36,34 @@ function Form() {
         console.warn("Something went poorly");
       });
     console.log(form);
+    e.preventDefault();
+    const templateParams = {
+      from_name: nom,
+      from_email: mail,
+      to_name: "Agribray",
+      subject: prestation,
+    };
+    emailjs.send(
+      "service_2etpuqa",
+      "template_v0o2cnd",
+      templateParams,
+      "user_Thhn4IaRT3llceNo0OZ6m"
+    );
+    resetForm();
+  };
+
+  const resetForm = () => {
+    setForm({
+      prenom: "",
+      nom: "",
+      mail: "",
+      tel: "",
+      societe: "",
+      cp: "",
+      ville: "",
+      prestation: "",
+      commentaire: "",
+    });
   };
 
   return (
