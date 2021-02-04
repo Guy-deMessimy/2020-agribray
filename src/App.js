@@ -1,10 +1,10 @@
 import './App.css';
-import TravauxList from "./pages/services/index"
+import AddWorks from './pages/admin/worksAdmin';
 
 function App() {
   return (
     <div className="App">
-      <TravauxList />
+      <AddWorks />
     </div>
   );
 }
