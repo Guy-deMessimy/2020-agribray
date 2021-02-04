@@ -3,12 +3,15 @@ import axios from "axios";
 
 function Form () {
   const [form, setForm] = useState({
-    author: "",
-    title: "",
-    illustrator: "",
-    year_start: "",
-    resume: "",
-    picture: "",
+    prenom: "",
+    nom: "",
+    mail: "",
+    tel: "",
+    societe: "",
+    cp: "",
+    ville: "",
+    prestation: "",
+    commentaires:"",
   });
 
   const handleChange = (e) => {
@@ -30,64 +33,110 @@ function Form () {
     <>
       <form onSubmit={handleSubmit}>
         <label>
-          Author:
+          Prenom:
           <input
-            name="author"
+            name="prenom"
             type="text"
+            placeholder="Didier"
             onChange={handleChange}
-            value={form.author}
+            value={form.prenom}
+            required
           />
         </label>
         <br />
         <label>
-          Title:
+          Nom:
           <input
-            name="title"
+            name="nom"
             type="text"
+            placeholder="Super"
             onChange={handleChange}
-            value={form.title}
+            value={form.nom}
+            required
           />
         </label>
         <br />
         <label>
-          Illustrator:
+          Mail:
           <input
-            name="illustrator"
-            type="text"
+            name="mail"
+            type="email"
+            placeholder="dsuper@gmail.com"
             onChange={handleChange}
-            value={form.Illustrator}
+            value={form.mail}
           />
         </label>
         <br />
         <label>
-          Année:
+          Téléphone:
           <input
-            name="year_start"
-            type="text"
+            name="tel"
+            type="tel"
+            placeholder="0322568978"
             onChange={handleChange}
-            value={form.year_start}
+            value={form.tel}
+            required
           />
         </label>
         <br />
         <label>
-          Résumé:
-          <textarea name="resume" onChange={handleChange} value={form.resume} />
-        </label>
-        <br />
-        <label>
-          Image:
+          Nom de société:
           <input
-            name="picture"
+            name="societe"
             type="text"
+            placeholder="societe.com"
             onChange={handleChange}
-            value={form.picture}
+            value={form.societe}
           />
         </label>
         <br />
-        <input type="Submit" readOnly value="Nouveau comic!" />
+        <label>
+          Code Postal:
+          <input
+            name="cp"
+            type="text"
+            placeholder="60000"
+            onChange={handleChange}
+            value={form.cp}
+            required
+          />
+        </label>
+        <br />
+        <label>
+         Ville:
+          <input
+            name="ville"
+            type="text"
+            placeholder="Beauvais"
+            onChange={handleChange}
+            value={form.ville}
+            required
+          />
+        </label>
+        <br />
+        <label>
+         Type de prestation:
+          <input
+            name="prestation"
+            type="text"
+            placeholder="je veux du mais"
+            onChange={handleChange}
+            value={form.prestation}
+            required
+          />
+        </label>
+        <br />
+        <label>
+          Commentaires:
+          <textarea name="commentaires" onChange={handleChange} value={form.commentaires} />
+        </label>
+        <br />
+        <input type="Submit" readOnly value="Nous contacter!" />
       </form>
     </>
   );
 }
 
 export default Form;
+
+          
