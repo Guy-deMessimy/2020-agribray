@@ -1,7 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
+/*const { backendApi } = require("../../conf")*/
 
-function Form () {
+function Form() {
   const [form, setForm] = useState({
     prenom: "",
     nom: "",
@@ -11,7 +12,7 @@ function Form () {
     cp: "",
     ville: "",
     prestation: "",
-    commentaires:"",
+    commentaire: "",
   });
 
   const handleChange = (e) => {
@@ -21,11 +22,14 @@ function Form () {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:5050/comics", form).then(({ data }) => {
-      console.log("Comic was created")
-    }).catch((err) => {
-      console.warn("Something went poorly")
-    })
+    axios
+      .post("http://localhost:5050/contact", form)
+      .then(({ data }) => {
+        console.log("Comic was created");
+      })
+      .catch((err) => {
+        console.warn("Something went poorly");
+      });
     console.log(form);
   };
 
@@ -103,7 +107,7 @@ function Form () {
         </label>
         <br />
         <label>
-         Ville:
+          Ville:
           <input
             name="ville"
             type="text"
@@ -115,7 +119,7 @@ function Form () {
         </label>
         <br />
         <label>
-         Type de prestation:
+          Type de prestation:
           <input
             name="prestation"
             type="text"
@@ -128,7 +132,11 @@ function Form () {
         <br />
         <label>
           Commentaires:
-          <textarea name="commentaires" onChange={handleChange} value={form.commentaires} />
+          <textarea
+            name="commentaire"
+            onChange={handleChange}
+            value={form.commentaire}
+          />
         </label>
         <br />
         <input type="Submit" readOnly value="Nous contacter!" />
@@ -138,5 +146,3 @@ function Form () {
 }
 
 export default Form;
-
-          
