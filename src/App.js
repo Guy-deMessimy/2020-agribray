@@ -1,14 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import TravauxList from "./pages/services/index"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Hello World
-        </p>
-      </header>
+      <TravauxList />
     </div>
   );
 }
