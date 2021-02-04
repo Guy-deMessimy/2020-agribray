@@ -7,7 +7,7 @@ const Services = ({ id, nature, image1 }) => {
       <p>{nature}</p>
       <img src={image1} alt={nature} />
     </div>
-  );
-};
+  )
+}
 
 export default Services;

@@ -2,6 +2,8 @@ import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Services from "../../components";
+import { ToastContainer, toast, Zoom } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const TravauxList = () => {
   const [travaux, setTravaux] = useState([]);
@@ -13,21 +15,28 @@ const TravauxList = () => {
         setTravaux(data);
       })
       .catch((err) => {
-        console.warn("Something went poorly");
-      });
+        if (err) {
+          toast("API ERROR", {
+            className: "error-toast",
+            draggable: true,
+            position: toast.POSITION.TOP_CENTER,
+          });
+        }
+      }) 
+      .finally(toast)
   }, [travaux]);
 
- 
-//  try catch finally
 
   return (
     <>
-      <div>
-        {travaux.map(({ id, nature, image1 }) => {
-          return <Services key={id} id={id} nature={nature} image1={image1} />;
-        })}
-        ;
-      </div>
+      {travaux.map(({ id, nature, image1 }) => {
+        return <Services key={id} id={id} nature={nature} image1={image1} />
+      })}
+      <ToastContainer
+        draggable={false}
+        transition={Zoom}
+        autoClose={8000}
+      ></ToastContainer>
     </>
   );
 };
