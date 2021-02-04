@@ -1,13 +1,13 @@
 import React from "react";
 
-const Services = ({ id, nature, image1 }) => {
+const Works = ({ id, nature, image1 }) => {
   return (
-    <div className="gameCard">
+    <div>
       <blockquote>{nature}</blockquote>
       <p>{nature}</p>
       <img src={image1} alt={nature} />
     </div>
-  )
-}
+  );
+};
 
-export default Services;
+export default Works;
