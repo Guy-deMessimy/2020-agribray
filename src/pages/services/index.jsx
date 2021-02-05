@@ -8,6 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 const TravauxList = () => {
   const [work, setWork] = useState([]);
   
+  //loader = true / try appel à l'api / catch si erreur / finally loader = false que l'appel soit réussi ou pas
   useEffect(() => {
     axios
       .get("http://localhost:5050/travaux")
@@ -23,7 +24,7 @@ const TravauxList = () => {
           });
         }
       })
-      .finally(toast);
+      .finally();
   }, [work]);
 
   return (
