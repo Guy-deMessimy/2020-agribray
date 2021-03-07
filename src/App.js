@@ -1,14 +1,18 @@
 import './App.css';
 import React from "react";
-import Form from "./pages/contacter/index"
 import './App.css';
+import SampleForm from'./pages/reduxForm/containers/form.container'
+// import Form from './pages/contacter'
 
-function App() {
+class App extends React.Component {
+
+render() {
   return (
     <div className="App">
-      <Form />
+      <SampleForm />
     </div>
-  );
+    )
+  }
 }
 
 export default App;
