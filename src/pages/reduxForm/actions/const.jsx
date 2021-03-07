@@ -1,0 +1,3 @@
+export const FORM_SUBMIT_SUCCEEDED = "SampleForm/FORM_SUBMIT_SUCCEEDED";
+export const FORM_SUBMIT_FAILED = "SampleForm/FORM_SUBMIT_FAILED";
+export const FORM_SEND_EMAIL = "SampleForm/FORM_SEND_EMAIL"
