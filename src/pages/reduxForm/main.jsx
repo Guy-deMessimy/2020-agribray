@@ -4,7 +4,6 @@ import { Field } from "redux-form/immutable";
 import InputField from "./components/input";
 import RadioField from "./components/radio";
 import TextField from "./components/text";
-import validate from "./validate";
 import listFormErrors from "./helpers";
 import emailJs from "./submit";
 

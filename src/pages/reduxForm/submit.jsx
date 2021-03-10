@@ -1,3 +1,4 @@
+import validate from "./validate";
 import { init } from "emailjs-com";
 import * as emailjs from "emailjs-com";
 init("user_Thhn4IaRT3llceNo0OZ6m");
@@ -6,6 +7,7 @@ const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 function emailJs(values) {
   return sleep(1000).then(() => {
+    validate(values);
     // simulate server latency
     const test = JSON.stringify(values, null, 2);
     const retest = JSON.parse(test);
