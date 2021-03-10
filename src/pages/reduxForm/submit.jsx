@@ -2,12 +2,19 @@ import validate from "./validate";
 import { init } from "emailjs-com";
 import * as emailjs from "emailjs-com";
 init("user_Thhn4IaRT3llceNo0OZ6m");
+require("dotenv").config();
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 function emailJs(values) {
   return sleep(1000).then(() => {
     validate(values);
+    // const {
+    //   REACT_APP_SERVICE_ID,
+    //   REACT_APP_TEMPLATE_ID,
+    //   REACT_APP_USER_ID,
+    // } = process.env;
+
     // simulate server latency
     const test = JSON.stringify(values, null, 2);
     const retest = JSON.parse(test);
@@ -23,6 +30,10 @@ function emailJs(values) {
     };
     emailjs
       .send(
+      //   REACT_APP_SERVICE_ID,
+      // REACT_APP_TEMPLATE_ID,
+      // templateParams,
+      // REACT_APP_USER_ID
         "service_2etpuqa",
         "template_v0o2cnd",
         templateParams,
