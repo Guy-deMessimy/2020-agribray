@@ -2,20 +2,20 @@
 import { connect } from "react-redux";
 import SampleForm from "../main";
 import { reduxForm } from "redux-form/immutable";
-import { formHasErrorsSelector, getFormErrorsSelector } from "../selectors";
+import { formHasErrorsSelector, getFormErrorsSelector } from "./selectors";
 import { formSubmitFailedAction, formSubmitSucceededAction } from "../actions";
 
 SampleForm.defaultProps = {
   errors: {},
 };
 
-//donner les  propriétés au store avec le selector / les rend à main
+//transmit props on store and share with component
 const mapStateToProps = (state) => ({
   formHasErrors: formHasErrorsSelector(state),
   errors: getFormErrorsSelector(state),
 });
 
-//equivalent de connect(mapStateToProps, mapDispatchToprops inclus) = on connecte et on passe les créateurs d'action en meme temps
+//as a connect(mapStateToProps, mapDispatchToprops inclus)
 const SampleFormConnect = connect(
   mapStateToProps,
   null

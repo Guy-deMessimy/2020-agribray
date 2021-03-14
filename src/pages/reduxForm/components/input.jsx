@@ -4,8 +4,7 @@ import PropTypes from "prop-types";
 const InputField = ({ value, onChange, text, fieldName }) => (
   <div className="input-field">
     <label htmlFor={fieldName} className="input-field__label">
-      {text}
-      <input value={value} onChange={onChange} />
+      <input placeholder={text} value={value} onChange={onChange} />
     </label>
   </div>
 );
