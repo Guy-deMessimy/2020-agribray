@@ -4,7 +4,7 @@ import { Field } from "redux-form/immutable";
 import InputField from "./components/input";
 import TextField from "./components/text";
 import listFormErrors from "./utils/helpers";
-import emailJs from "./submit";
+import emailJs from "./actions";
 import { RegisterForm, RegisterFormErrors } from "./style";
 
 const renderInputComponent = ({ input: { name, onChange, value } }) => {
@@ -12,9 +12,9 @@ const renderInputComponent = ({ input: { name, onChange, value } }) => {
   let fieldName;
 
   switch (name) {
-    case "prénom":
+    case "prenom":
       text = "Prénom *";
-      fieldName = "prénom";
+      fieldName = "prenom";
       break;
     case "nom":
       text = "Nom *";
@@ -24,21 +24,21 @@ const renderInputComponent = ({ input: { name, onChange, value } }) => {
       text = "Mail *";
       fieldName = "mail";
       break;
-    case "téléphone":
+    case "tel":
       text = "Téléphone *";
-      fieldName = "téléphone";
+      fieldName = "tel";
       break;
-    case "société":
+    case "societe":
       text = "Sociéte *";
-      fieldName = "société";
+      fieldName = "societe";
       break;
-    case "code postal":
+    case "cp":
       text = "Code postal *";
-      fieldName = "code postal";
+      fieldName = "cp";
       break;
     case "ville":
       text = "Ville *";
-      fieldName = "Ville";
+      fieldName = "ville";
       break;
     case "prestation":
       text = "Type de prestation *";
@@ -68,20 +68,20 @@ let SampleForm = ({ handleSubmit, errors, formHasErrors }) => (
     </p>
     <form onSubmit={handleSubmit(emailJs)}>
       <RegisterForm>
-        <Field name="prénom" type="text" component={renderInputComponent} />
+        <Field name="prenom" type="text" component={renderInputComponent} />
         <Field name="nom" type="text" component={renderInputComponent} />
         <Field name="mail" type="email" component={renderInputComponent} />
-        <Field name="téléphone" type="text" component={renderInputComponent} />
-        <Field name="société" type="text" component={renderInputComponent} />
+        <Field name="tel" type="text" component={renderInputComponent} />
+        <Field name="societe" type="text" component={renderInputComponent} />
         <Field
-          name="code postal"
+          name="cp"
           type="text"
           component={renderInputComponent}
         />
         <Field name="ville" type="number" component={renderInputComponent} />
         <Field name="prestation" type="text" component={renderInputComponent} />
         <Field
-          name="textArea"
+          name="commentaire"
           type="text"
           component={({ input: { onChange, value } }) => (
             <TextField

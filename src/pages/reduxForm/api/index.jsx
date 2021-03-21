@@ -1,8 +1,9 @@
-const { backendApi, api } = require("../../../../conf");
+import axios from "axios";
+const { backendApi } = require("../../../conf");
 
-export const sendDataContact = (form) => {
-  return api
-    .post(`${backendApi}/contact`, form)
+export const sendDataContact = (values) => {
+  return axios
+    .post(`${backendApi}/contact`, values)
     .then(({ data }) => {
       console.log("Contact was created");
     })

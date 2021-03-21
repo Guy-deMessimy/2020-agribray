@@ -7,15 +7,15 @@ const validate = (values) => {
   const phonePattern = /^((\+|00)33\s?|0)[1234567](\s?\d{2}){4}$/;
   const postcodePattern = /^(?:[0-8]\d|9[0-8])\d{3}$/;
   const errors = {};
-  const surname = values.get("prénom");
+  const surname = values.get("prenom");
   const name = values.get("nom");
   const mail = values.get("mail");
-  const telephone = values.get("téléphone");
-  const societe = values.get("société");
-  const cp = values.get("code postal");
+  const telephone = values.get("tel");
+  const societe = values.get("societe");
+  const cp = values.get("cp");
   const ville = values.get("ville");
   const prestation = values.get("prestation");
-  const textArea = values.get("textArea");
+  const textArea = values.get("commentaire");
 
   if (R.isNil(surname)) {
     errors.surname = 'field "Surname" can\'t be empty';
