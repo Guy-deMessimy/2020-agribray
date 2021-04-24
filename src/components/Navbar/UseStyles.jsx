@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core";
   const useStyles = makeStyles(() => ({   
     header: {
       backgroundColor: "#06623B",
-      paddingRight: "79px",
+      paddingRight: "85px",
       paddingLeft: "118px",
       "@media (max-width: 900px)": {
         paddingLeft: 0,
