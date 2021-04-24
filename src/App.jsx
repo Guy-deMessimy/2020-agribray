@@ -4,6 +4,7 @@ import { Reset } from "styled-reset";
 import FrontPage from "./components/Frontpage/index";
 import Header from "./components/Navbar/Header";
 import Footer from "./components/Footer"
+import SampleForm from "./pages/reduxForm/main"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={FrontPage} />
+          <Route exact path="/services" component={SampleForm} />
         </Switch>
         <Footer />
       </Router>
