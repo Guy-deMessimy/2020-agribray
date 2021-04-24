@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { device } from "../layout/Device";
 
 export const Fond = styled.div`
-  background-image: url("/photos/Frontpage.jpg");
+  background-image: url("/photos/Frontpage.png");
   background-repeat: no-repeat;
   min-width: 2000px;
   width: 100%;
