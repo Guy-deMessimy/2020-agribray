@@ -4,7 +4,7 @@ import { Reset } from "styled-reset";
 import FrontPage from "./components/Frontpage/index";
 import Header from "./components/Navbar/Header";
 import Footer from "./components/Footer"
-import SampleForm from "./pages/reduxForm/main"
+import SampleForm from'./pages/reduxForm/containers/form.container'
 
 function App() {
   return (
