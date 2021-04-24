@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Reset } from "styled-reset";
 import FrontPage from "./components/Frontpage/index";
 import Header from "./components/Navbar/Header";
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={FrontPage} />
         </Switch>
+        <Footer />
       </Router>
     </>
   );
